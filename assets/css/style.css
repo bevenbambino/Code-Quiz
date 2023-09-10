@@ -1,0 +1,124 @@
+:root{
+    --coral : #F05454;
+    --light-grey : #F5F5F5;
+    --grey-blue : #30475E;
+    --navy-blue : #121212;
+}
+
+/* universal selectors */
+* {
+    text-align: center;
+    background-color: var(--light-grey);
+    color: var(--navy-blue);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* element selectors */
+/* in the header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--grey-blue);
+}
+
+header button, header p, header span {
+    background-color: var(--coral);
+    color: var(--light-grey);
+    padding: 5px;
+}
+
+header button {
+    margin: 0;
+    height: 30px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ol {
+    margin-bottom: 20px;
+}
+
+li {
+    display: inline;
+    justify-content: center;
+    padding: 5px;
+}
+
+/* in the main */
+h2 {
+    padding: 20px;
+    color: var(--navy-blue);
+}
+
+p{
+    padding: 10px 10px 30px 10px;
+}
+
+button{
+    margin: 0 auto 10px auto;
+    background-color: var(--coral);
+    border: 2px solid var(--grey-blue);
+    color: var(--light-grey);
+    width: 150px;
+    height: 25px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button:hover{
+    border: solid 4px var(--navy-blue);
+}
+
+button:active{
+    border: 5px solid var(--navy-blue);
+}
+
+/* in the form*/
+form {
+    margin: 10px;
+}
+
+form input {
+    width: 100px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+/* class selectors */
+
+.start-container {
+    display: block;
+}
+
+.quiz-game{
+    display: none;
+}
+
+.high-score-chart{
+    display: none;
+}
+
+.hsc-buttons{
+    display:flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.hsc-buttons button{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.high-score-form {
+    display: none;
+}
