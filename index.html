@@ -22,5 +22,37 @@
         <p id="game-description">This is a quiz to test your coding knowledge. Choose the correct answer to win. Beware of the time, lest you fall to defeat.</p>
         <button id="start-game-button">Start Quiz</button>
     </div>
+
+     <div class="quiz-game">
+        <h2 class="q-prompt"></h2>
+        <button class="choice" id="A" data-state="A"></button>
+        <button class="choice" id="B" data-state="B"></button>
+        <button class="choice" id="C" data-state="C"></button>
+        <button class="choice" id="D" data-state="D"></button>
+    </div>
+
+    <!-- high score menu/screen -->
+    <div class="high-score-chart">
+        <h2>High Scores</h2>
+        <ol class="all-scores">
+        </ol>
+        <div class="hsc-buttons">
+            <button id="go-back-button">Go back</button>
+            <button id="clear-button">Clear high scores</button>
+        </div>
+    </div>
+
+    <!-- All done screen / add high score form -->
+    <div class="high-score-form">
+        <h2>All done!</h2>
+        <h4>Your final score is <span id="your-score"></span></h4>
+        <form action="get-initials">
+            <label for="initials"> Enter Initials:</label>
+            <input id="user-initials" type="text" placeholder="Initials here" />
+            <button id="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
